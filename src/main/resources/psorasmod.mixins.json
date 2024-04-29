@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "psora.psorasmod.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

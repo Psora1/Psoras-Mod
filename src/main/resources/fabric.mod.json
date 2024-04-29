@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "psoras_mod",
+	"version": "v0.1.0-mc1.20.6",
+	"name": "Psora's Mod",
+	"description": "Psora's Mod adds some vanilla-friendly blocks, items, crops, ores, armor, and tools that feel like they should have been in the vanilla game in the first place. ",
+	"authors": [
+		"Psora"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/resourcepack/psoras-mod",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/psoras-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"psora.psorasmod.PsorasMod"
+		],
+		"client": [
+			"psora.psorasmod.PsorasModClient"
+		],
+		"fabric-datagen": [
+			"psora.psorasmod.PsorasModDataGenerator"
+		]
+	},
+	"mixins": [
+		"psorasmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
